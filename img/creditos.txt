@@ -1,0 +1,8 @@
+-->Créditos<--
+*Diseño de la página: https://retrina.com/demo/arshia/classic/colorfull.html
+*Video by Engin Akyurt from Pexels: Pexels Videos 1943483
+*https://www.flaticon.com/free-icon/conversation_1759317
+*https://www.flaticon.com/free-icon/psychology_1593583
+*Photo by Elly Fairytale from Pexels (pexels-elly-fairytale-3811074)
+*https://undraw.co/
+background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);

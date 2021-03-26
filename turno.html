@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      La Loca de la Mente - "Aprende a vivir con la locura que sentís"
+    </title>
+    <link rel="shortcut icon" type="image/png" href="img\favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styleflex.css" />
+    <link
+      rel="stylesheet"
+      href="jquery/jquery-ui-1.12.1.custom/jquery-ui.css"
+    />
+    <script src="jquery/jquery-3.5.1.min.js"></script>
+    <script src="jquery/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+  </head>
+  <body>
+     <!--Inicio Cabecera-->
+    <nav class="navMenu" id="navMenu">
+      <header class="navbar-header">
+        <div class="logoBox">
+          <div id="agitar">
+            <img src="img\iconoBrain48.png" alt="cerebro" />
+          </div>
+        </div>
+
+        <div class="menuBox">
+          <a href="#navMenu" class="menuMobile abrir">
+            <i class="fas fa-bars"></i>
+          </a>
+          <a href="#" class="menuMobile cerrar">
+            <i class="fas fa-times"></i>
+          </a>
+        </div>
+      </header>
+      <ul class="menu" id="menuDesplegable">
+        <li class="menuItem">
+          <a href="index.html" class="menuLink menuLinkActivo">Inicio</a>
+        </li>
+        <li class="menuItem">
+          <a href="index.html" class="menuLink">Acerca de</a>
+        </li>
+        <li class="menuItem">
+          <a href="index.html" class="menuLink">Servicios</a>
+        </li>
+        <li class="menuItem">
+          <a href="index.html" class="menuLink">Blog</a>
+        </li>
+        <li class="menuItem">
+          <a href="index.html" class="menuLink">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+
+     <!--Inicio Formulario Turno-->
+     <main>
+    <section class="boxTurno">
+      <div class="encabezadoTurno">
+        <div>
+          <h2>Agenda un turno</h2>
+          <p>
+            Horario de atención: Lunes a Viernes <br />
+            10hs a 18hs
+          </p>
+        </div>
+            <form class="formIngreso" id="loginForm">
+              <input type="text" id="nombre" placeholder="Nombre" required />
+              <input type="tel" id="telefono" placeholder="Telefono" required />
+              <input type="mail" id="mail" placeholder="Email" />
+              <select name="tipoConsulta" id="opciones">
+                <option value="1raVez" id="1raVez">Primera Consulta</option>
+                <option value="control" id="control">Consulta Regular</option>
+              </select>
+            </form>
+            <div class="boxCalendario" id="">
+            <label for="calendario">Elige una fecha:</label>
+            <input type="text" name="" id="calendario">
+              </div> 
+              <div class="boxHorario">
+              <label for="horaDisponible">Horario disponible:</label>
+              <select name="horaDisponible" id="hora">
+                 <option value="9:00">9:00</option>
+                 <option value="10:00">10:00</option>
+                 <option value="11:00">11:00</option>
+                 <option value="12:00">12:00</option>
+                 <option value="14:00">14:00</option>
+                 <option value="15:00">15:00</option>
+                 <option value="16:00">16:00</option>
+                 <option value="17:00">17:00</option>
+                 <option value="18:00">18:00</option>
+              </select>
+              </div>
+           
+            <div class="boxBtnAgendar">
+              <button class="btnAgendar" id="agendar" value="agendar">
+                Reservar
+              </button>
+            </div>
+          </div>
+
+          <div><p>Los datos guardados son:</p></div>
+      
+      </div>
+      <div id="datosResultado">A la espera de la lectura</div>
+    </section>
+
+</main>
+    
+    <script type="text/javascript" src="js\calendario.js"></script>
+    <script type="text/javascript" src="js\main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9092ef8709.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

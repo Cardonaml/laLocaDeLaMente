@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      La Loca de la Mente - "Aprende a vivir con la locura que sentís"
+    </title>
+    <link rel="shortcut icon" type="image/png" href="img\favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css\styleflex.css" />
+   
+  </head>
+
+  <body>
+    <!--Inicio Cabecera-->
+    <nav class="navMenu" id="navMenu">
+      <header class="navbar-header">
+        <div class="logoBox">
+          <div id="agitar">
+            <img src="img\iconoBrain48.png" alt="cerebro" />
+          </div>
+        </div>
+
+        <div class="menuBox">
+          <a href="#navMenu" class="menuMobile abrir">
+            <i class="fas fa-bars"></i>
+          </a>
+          <a href="#" class="menuMobile cerrar">
+            <i class="fas fa-times"></i>
+          </a>
+        </div>
+      </header>
+
+      <ul class="menu" id="menuDesplegable">
+        <li class="menuItem">
+          <a href="#hero" class="menuLink menuLinkActivo">Inicio</a>
+        </li>
+        <li class="menuItem">
+          <a href="#about" class="menuLink">Acerca de</a>
+        </li>
+        <li class="menuItem">
+          <a href="#boxServ" class="menuLink">Servicios</a>
+        </li>
+        <li class="menuItem">
+          <a href="#blog" class="menuLink">Blog</a>
+        </li>
+        <li class="menuItem">
+          <a href="#contacto" class="menuLink">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--Fin Cabecera-->
+    <main>
+      <!--Inicio Redes-->
+      <aside class="socialBox">
+        <div class="followMe">
+          <span>Sigueme</span>
+        </div>
+        <div>
+          <a class="socialLink" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="socialLink" href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </aside>
+      <!--Fin Redes-->
+
+      <!--Inicio Presentación-->
+      <section class="boxhero" id="hero">
+        <div class="heroLeft">
+          <h1>LA LOCA DE LA MENTE</h1>
+          <p>
+            Aquí encontrarás un espacio de escucha activa y empatía en tus
+            procesos que te llevarán a la aceptación y transformación de tu
+            vida.
+          </p>
+        </div>
+        <div class="heroRight">
+          <video id="media" preload="metadata" loops class="video">
+            <source src="img\chicaPensandoEditado.mp4 " type="video/mp4"/>
+            <source src="img\chicaPensandoEditado.ogg " type="video/mp4"/>
+          </video>
+          <div class="videoControls">
+            <div class="barraProgreso" id="progreso">
+              <progress  value="0" max="100" class="bProgreso-filled" id="barra"><span>0 %</span></progress>
+            </div>     
+            
+            <div class="playerBtn" id="play">
+              <i class="fas fa-play play-btn"></i>
+              <i class="fas fa-pause pause-btn hide"></i>              
+            </div>
+        </div>        
+      </section>
+      <!--Fin Presentación-->
+
+      <!--Inicio Acerca de Mi-->
+      <section class="boxabout" id="about">
+        <div class="aboutLeft">
+          <h2 id="tipeado">SOBRE LA LOCA</h2>
+          <img  id="chica" src="img\chica.png" alt="chica con chica_cartel">
+          <canvas id="canvas" width="310" height="270"></canvas>
+        </div>
+          <!--
+          <p>
+            Surge como una manera de naturalizar la ayuda psicologíca, Exponer
+            situaciones difíciles de manejar y que requieren asistencia, brindar
+            un espacio de confianza para que puedas tratar tus procesos
+            psicológicos.
+          </p>-->
+         
+        
+        <div class="aboutRight">
+          <img class="foto" src="img\Beatriz.PNG" alt="Beatriz" />
+          <h5>Detrás de LLDLM está<br /><span>Beatriz Cardona</span></h5>
+          <h6>
+            Psicóloga de la Universidad San Buenaventura de Cali en 2016
+            diplomada en familias contemporáneas su clínica e intervención.
+          </h6>
+        </div>
+      </section>
+      <!--Fin Acerca de Mi-->
+
+      <!--Inicio Servicios-->
+      <section class="boxPpalServ" id="boxServ">
+        <div class="tituloBoxServ">
+          <h2>Servicios</h2>
+        </div>
+        <div class="boxItems">
+          <div class="item1">
+            <div class="iconoServ">            
+              <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="conversacionEditada">
+                  <path id="circulo-ppal" d="M512 256C512 397.387 397.387 512 256 512C114.613 512 0 397.387 0 256C0 114.613 114.613 0 256 0C397.387 0 512 114.613 512 256Z" fill="#06CCAB"/>
+                  <path id="sombra" d="M505.438 198.156L419.883 112.602L86.6914 202.863L128.371 244.547L113.195 258.371L162.836 308.012L85.9141 373.824L221.812 509.723C233 511.215 244.406 512 256 512C397.387 512 512 397.387 512 256C512 236.105 509.73 216.742 505.438 198.156Z" fill="#11A892"/>
+                  <g id="persona-derecha">
+                  <path id="shadow-cir" d="M441.816 329.285C441.816 368.453 410.066 400.203 370.902 400.203C331.734 400.203 299.984 368.453 299.984 329.285C299.984 290.121 331.734 258.371 370.902 258.371C410.066 258.371 441.816 290.121 441.816 329.285Z" fill="#DCE1EB"/>
+                  <path id="head-right" d="M401.703 314.449C401.703 331.465 387.914 345.254 370.902 345.254C353.887 345.254 340.098 331.465 340.098 314.449C340.098 297.438 353.887 283.648 370.902 283.648C387.914 283.648 401.703 297.438 401.703 314.449Z" fill="#E09380"/>
+                  <path id="violeta" d="M321.918 380.566C334.648 392.73 351.902 400.203 370.902 400.203C389.898 400.203 407.152 392.73 419.883 380.566C412.082 361.156 393.102 347.445 370.902 347.445C348.699 347.445 329.719 361.156 321.918 380.566Z" fill="#BB6BD9"/>
+                  </g>
+                  <g id="persona-izquierda">
+                  <path id="withe-cir" d="M212.016 329.285C212.016 368.453 180.266 400.203 141.098 400.203C101.934 400.203 70.1836 368.453 70.1836 329.285C70.1836 290.121 101.934 258.371 141.098 258.371C180.266 258.371 212.016 290.121 212.016 329.285Z" fill="white"/>
+                  <path id="head-left" d="M171.902 314.449C171.902 331.465 158.113 345.254 141.098 345.254C124.086 345.254 110.297 331.465 110.297 314.449C110.297 297.438 124.086 283.648 141.098 283.648C158.113 283.648 171.902 297.438 171.902 314.449Z" fill="#FFBEAA"/>
+                  <path id="amarillo" d="M92.1172 380.566C104.848 392.73 122.102 400.203 141.098 400.203C160.098 400.203 177.352 392.73 190.082 380.566C182.281 361.156 163.301 347.445 141.098 347.445C118.898 347.445 99.918 361.156 92.1172 380.566Z" fill="#FFCE00"/>
+                  </g>
+                  <g id="nube-izquierda">
+                  <path id="nube-entera" d="M378.82 97.3789H133.18C98.3906 97.3789 70.1836 125.582 70.1836 160.375C70.1836 188.18 88.2031 211.758 113.195 220.113V258.371L171.473 223.371H340.527L398.805 258.371V220.113C423.797 211.758 441.816 188.176 441.816 160.375C441.816 125.582 413.609 97.3789 378.82 97.3789Z" fill="#555A66"/>
+                  <path id="cir-central" d="M274.227 162.227C274.227 172.289 266.066 180.449 256 180.449C245.934 180.449 237.773 172.289 237.773 162.227C237.773 152.16 245.934 144 256 144C266.066 144 274.227 152.16 274.227 162.227Z" fill="#7E8596"/>
+                  <path id="cir-left" d="M177.551 162.227C177.551 172.289 169.391 180.449 159.324 180.449C149.258 180.449 141.098 172.289 141.098 162.227C141.098 152.16 149.258 144 159.324 144C169.391 144 177.551 152.16 177.551 162.227Z" fill="#7E8596"/>
+                  </g>
+                  <g id="nube-derecha">
+                  <path id="fondo-nube" d="M378.82 97.3789H255.594V223.371H340.527L398.805 258.371V220.113C423.797 211.758 441.816 188.176 441.816 160.375C441.816 125.582 413.609 97.3789 378.82 97.3789Z" fill="#333940"/>
+                  <path id="middle-cir" d="M256 144C255.863 144 255.73 144.02 255.594 144.02V180.43C255.73 180.434 255.863 180.449 256 180.449C266.066 180.449 274.227 172.289 274.227 162.227C274.227 152.16 266.066 144 256 144Z" fill="#636978"/>
+                  <path id="cir-right" d="M370.902 162.227C370.902 172.289 362.742 180.449 352.676 180.449C342.609 180.449 334.449 172.289 334.449 162.227C334.449 152.16 342.609 144 352.676 144C362.742 144 370.902 152.16 370.902 162.227Z" fill="#636978"/>
+                  </g>
+                  </g>
+                </svg>
+            </div>  
+                <div class="txtItem1">
+                  <h5>Primera Consulta</h5>
+                  <p>
+                    Tu primera cita es <span>gratis</span> lo que te permite un
+                    acercamiento a la consulta si nunca hiciste una vas a poder
+                    sacarte todas las dudas.
+                  </p>
+                  <p>Duración: 30 minutos</p>
+                  <button class="buttonInfo" id="consultaUno"><a href="turno.html">+ Info</a></button>
+                </div>
+           </div>
+          <div class="item2">
+            <div class="iconoServ">
+              <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="psychology 1">
+                  <g id="Group">
+                    <g id="Group_2">
+                      <g id="cir-ppal">
+                        <path id="Vector" d="M256 512C397.385 512 512 397.385 512 256C512 114.615 397.385 0 256 0C114.615 0 0 114.615 0 256C0 397.385 114.615 512 256 512Z" fill="#4BCDD7"/>
+                      </g>
+                    </g>
+                    <g id="sillon">
+                     <path id="sombra" d="M294.042 508.71C406.59 490.571 494.57 399.072 507.375 284.826L407.964 185.415L309.488 338.969L142.84 172.32L159.266 246.21L85.43 172.374L156.744 323.059L189.491 355.806L170.481 385.149L294.042 508.71Z" fill="#00B8C1"/>
+                    <g id="Group_12">
+                     <path id="Vector_2" d="M425.589 299.478H310.371V224.813C310.371 195.613 334.043 171.941 363.243 171.941H372.717C401.917 171.941 425.589 195.613 425.589 224.813V299.478Z" fill="#555A66"/>
+                   </g>
+                  <g id="Group_13">
+                    <path id="Vector_3" d="M425.589 224.813C425.589 195.613 401.918 171.941 372.717 171.941H363.243C362.77 171.941 362.303 171.964 361.834 171.977V299.478H425.589V224.813Z" fill="#414952"/>
+                  </g>
+                  <g id="Group_14">
+                    <path id="Vector_4" d="M425.589 284.854H254.874V323.058H425.589V284.854Z" fill="#636978"/>
+                  </g>
+                  <g id="Group_15">
+                    <path id="Vector_5" d="M425.588 284.854H361.833V323.059H425.588V284.854Z" fill="#555A66"/>
+                  </g>
+                  <g id="Group_16">
+                    <path id="Vector_6" d="M409.933 327.898L381.388 337.126L399.899 394.388L428.444 385.16L409.933 327.898Z" fill="#414952"/>
+                        </g>
+                  <g id="Group_17">
+                    <path id="Vector_7" d="M188.986 327.881L170.475 385.143L199.02 394.371L217.531 337.109L188.986 327.881Z" fill="#555A66"/>
+                  </g>
+                  <g id="Group_18">
+                    <path id="Vector_8" d="M269.886 327.881L251.374 385.143L279.919 394.371L298.431 337.109L269.886 327.881Z" fill="#555A66"/>
+                  </g>
+                  <g id="Group_19">
+                    <path id="Vector_9" d="M429.764 351H225.236C194.787 351 166.611 337.208 147.934 313.162L56.209 195.07L85.43 172.374L177.156 290.466C188.772 305.422 206.297 314 225.236 314H429.763V351H429.764Z" fill="white"/>
+                  </g>
+                  <g id="Group_20">
+                    <path id="Vector_10" d="M429.764 314H252.905V351H429.764V314Z" fill="#E9EDF5"/>
+                  </g>
+                  <g id="Group_21">
+                    <path id="Vector_11" d="M142.837 172.316L113.7 195.119L174.96 273.395L204.097 250.592L142.837 172.316Z" fill="white"/>
+                  </g>
+                 </g>
+                 </g>
+                </g>
+              </svg>
+
+            </div>
+            <div class="txtItem2">
+              <h5>Sesión Virtual</h5>
+              <p>
+                <span>¿Querés seguir?</span> podemos acordar un turno de manera
+                virtual (videollamada) donde se trabajan diferentes
+                problemáticas.
+              </p>
+              <p>Duración: 1 hora.<br />Valor: 1000 pesos.</p>
+              <button class="buttonInfo" id="Proximo-turno"><a href="turno.html">+ Info</a></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Fin Servicios-->
+
+      <!--Inicio Blog-->
+      <section class="blogBox" id="blog">
+        <div class="tituloBoxBlog">
+          <h2>
+            Últimas entradas <br />
+            del Blog
+          </h2>
+        </div>
+
+        <div class="boxEntradas">
+          <article class="entrada1">
+            <img loading="lazy" src="img\entrada2.PNG " alt="salud mental " />
+            <h6>El poder de nuestras palabras</h6>
+            <p>
+              Para mí las palabras no se las lleva el viento; siempre cobran
+              sentido por más <a href="# ">Lee más..</a>
+            </p>
+          </article>
+          <article class="entrada2">
+            <img
+              loading="lazy"
+              src="img\entrada1.PNG "
+              alt="sufrimiento psicologico "
+            />
+            <h6>Sufrimiento Psicológico</h6>
+            <p>
+              Muchas personas viven diariamente en silencio un dolor emocional
+              <a href="# ">Lee más..</a>
+            </p>
+          </article>
+          <article class="entrada3">
+            <img
+              loading="lazy"
+              src="img\entrada3.PNG "
+              alt="dia de la salud mental "
+            />
+            <h6>Dia Mundial de la Salud Mental</h6>
+            <p>
+              10 de octubre es el día mundial de la Salud Mental.🧠❤️<a href="#"
+                >Lee más..</a
+              >
+            </p>
+          </article>
+        </div>
+      </section>
+      <!--Fin Blog-->
+
+      <!--Inicio Contacto-->
+      <section class="contactoBox" id="contacto">
+        <div>
+          <h2>Contacto</h2>
+        </div>
+
+        <form class="formBox" id="formulario" action="" method="POST">
+          <input
+            name="name"
+            id="name"
+            type="text"
+            placeholder="Tu nombre*"
+            required
+          />
+
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Tu correo electrónico*"
+            required
+          />
+
+          <input
+            name="subject"
+            id="subject"
+            type="text"
+            placeholder="Tu asunto*"
+            required
+          />
+
+          <textarea
+            name="comments"
+            id="comments"
+            rows="4"
+            placeholder="Tu mensaje..."
+          ></textarea>
+
+          <button class="formBtn" id="btnEnviar">Enviar</button>
+        </form>
+      </section>
+
+      <!--Fin Contacto-->
+      <!--Inicio footer-->
+      <footer>
+        <div>
+          <p>
+            Copyright © 2021. Todos los derechos son propiedad de
+            <span>La Loca De La Mente 🧠</span>
+          </p>
+        </div>
+      </footer>
+      <!--Fin footer-->     
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js\main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9092ef8709.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
